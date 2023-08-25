@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<header class="my-5">
+    <h1 class="text-3xl text-center">BMI Calculator</h1>
+    <p class="text-center">Body Mass Index</p>
+</header>
+
+<body
+    class="bg-slate-950 text-white lg:w-2/5 lg:flex lg:justify-center lg:flex-col lg:mx-auto font-primary font-bold mb-10">
+    <main>
+        <form action="" name="formportfolio">
+            <section class="flex flex-col justify-center mx-auto gap-2 w-11/12 ">
+
+                <input type="text" id="username"
+                    class="border border-black rounded-md py-2 px-2 text-black focus:outline-0" name="nama"
+                    placeholder="Masukkan Nama" required>
+                <input type="number" id="age"
+                    class="border border-black rounded-md py-2 px-2 text-black focus:outline-0"
+                    placeholder="Masukkan Umur" name="umur" required>
+
+                <div class="flex flex-row align-middle gap-x-2">
+                    <div class="flex bg-slate-800 py-1 px-2 rounded-md text-sm lg:w-full">
+                          <input type="radio" id="pria" name="gender" value="Pria">
+                          <label for="pria" class="text-md">Pria</label>
+                    </div>
+
+                    <div class="flex bg-slate-800 py-1 px-2 rounded-md text-sm lg:w-full">
+                          <input type="radio" id="wanita" name="gender" value="Wanita">
+                          <label for="wanita" class="text-md">Wanita</label>
+                    </div>
+
+                    <div class="flex bg-slate-800 py-1 px-2 rounded-md text-sm lg:w-full">
+                          <input type="radio" id="none" name="gender" value="Tidak tau">
+                          <label for="none" class="text-md">Tidak tau</label>
+                    </div>
+                </div>
+
+                <input type="number" id="bbadan" class="border border-black rounded-md py-2 px-2 text-black"
+                    placeholder="Berat Badan (kg)" name="berat" required>
+
+                <input type="number" id="tbadan" class="border border-black rounded-md py-2 px-2 text-black"
+                    placeholder="Tinggi Badan (cm)" name="tinggi" required>
+
+                <button type="submit" id="send" name="send" class="bg-slate-800 py-2 rounded-md">Hitung</button>
+            </section>
+        </form>
+
+
+        <section id="result" class="w-11/12 mx-auto rounded-md hidden mt-5">
+            <h1 class="flex justify-center mx-auto text-center text-2xl font-bold" id="result-title"></h1>
+            <div class="flex flex-wrap gap-2 box-border">
+                <p id="nama-desc" class="flex-2 w-full box-border text-white bg-slate-900 py-2 px-3 rounded-md text-sm">
+                </p>
+                <p id="gender-desc"
+                    class="flex-2 w-full box-border text-white bg-slate-900 py-2 px-3 rounded-md text-sm">
+                </p>
+                <p id="umur-desc" class="flex-2 w-full box-border text-white bg-slate-900 py-2 px-3 rounded-md text-sm">
+                </p>
+                <p id="berat-desc"
+                    class="flex-2 w-full box-border text-white bg-slate-900 py-2 px-3 rounded-md text-sm"></p>
+                <p id="tinggi-desc"
+                    class="flex-2 w-full box-border text-white bg-slate-900 py-2 px-3 rounded-md text-sm"></p>
+            </div>
+            <div id="image-desc" class="mt-2 rounded-md p-4">
+                <img src="" alt="" id="result-img">
+                <p id="description" class="flex justify-center text-center"></p>
+            </div>
+            <div class="w-11/12 p-4">
+                <h3 class="font-bold">Notes:</h3>
+                <ul class="list-disc">
+                    <li> Kurang dari 18 : Kurang Nutrisi</li>
+                    <li> 18 - 24.9 : Berat Ideal</li>
+                    <li> 25 Keatas : Berat Berlebih</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="fixed bg-slate-900 p-3 bottom-0 w-full text-center mt-32 left-0">
+        <p>Made with <span class="text-red-600">❤</span> by Raka Sanjaya</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+
+
+</html>

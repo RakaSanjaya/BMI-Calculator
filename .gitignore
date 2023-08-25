@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# yarn.lock file
+yarn.lock
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# VSCode settings
+.vscode/
+
+# IDE files
+.idea
+*.iml
+
+# macOS files
+.DS_Store
+
+# Compiled binary addons (https://github.com/TooTallNate/node-gyp/issues/566)
+build/
